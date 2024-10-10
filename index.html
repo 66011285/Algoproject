@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Generator and Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Card Generator</h1>
+    
+    <!-- Deck Display -->
+    <div id="deck" class="deck"></div>
+
+    <!-- Control Buttons -->
+    <button onclick="generateCard()">Generate New Card</button>
+    <button onclick="sortDeck()">Sort Cards</button>
+    <button onclick="clearDeck()">Clear Cards</button>
+
+    <!-- Modal for Zooming into Cards -->
+    <div id="cardModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modalContent" class="modal-content"></div>
+    </div>
+
+    <!-- Modal for congratulations message -->
+    <div id="congratsModal" class="modal">
+        <span class="close" onclick="closeCongratsModal()">&times;</span>
+        <div class="modal-content">
+            <h2>Congratulations! You sorted correctly!</h2>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
